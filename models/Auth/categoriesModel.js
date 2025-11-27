@@ -18,6 +18,12 @@ const categorySchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+
+
+amount: {
+  type: mongoose.Schema.Types.Decimal128,
+  default: 0.0,
+}
   },
   { timestamps: true }
 );
